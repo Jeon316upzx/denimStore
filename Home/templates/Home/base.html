@@ -1,0 +1,21 @@
+{% load fontawesome %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% load static %}
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'Home/header.html' %}
+  <body>
+
+   {% include 'Home/navbar.html' %}
+
+   {% block mycontent %}
+
+   
+   {% endblock %}
+
+  </body>
+</html>

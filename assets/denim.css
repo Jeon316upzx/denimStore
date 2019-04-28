@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+}
+
+#navbar{
+  background-color: white!important;
+}
+
+#navbar .navbar-brand{
+color: #000000;
+}
+#navbar .navbar-toggler{
+  background-color: black;
+}
+#navbar .nav-item .nav-link{
+  color: #000000;
+}
+
+#navbar .nav-item:hover{
+  text-decoration: underline;
+}
+
+.myjumbo{
+  background-image: url('/static/greenn.svg');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border-radius: 0;
+}
+
+#cara img{
+  background-repeat: no-repeat;
+}
+
+#trusted{
+  color: #0fF223;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 40px;
+  text-align: center;
+  height: 250px;
+  background-color: #000000!important;
+}
+
+#footer{
+  padding-top: 20px;
+  height: 200px;
+  background-color: white!important;
+}
+
+#footer input{
+  margin-top: 5px;
+  width: 250px;
+  padding: 10px;
+  height: 37px;
+  margin-right: 2px;
+
+}
+#footer h5{
+  font-weight: bold;
+}
+
+@media (max-width:768px) {
+
+  .myjumbo{
+    height: 500px;
+    border-radius: 0;
+    width: 340px;
+  }
+
+  #cara img{
+    width: 300px;
+  }
+
+  #footer input{
+    width: 250px;
+    padding: 10px;
+    height: 37px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+#about{
+    text-align: center;
+ }
+
+
+#product-item .row{
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+}
+
+#product-item .row:hover{
+  border: 0.3px solid black;
+}

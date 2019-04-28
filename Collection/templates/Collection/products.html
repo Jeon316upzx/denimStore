@@ -1,0 +1,50 @@
+{% load fontawesome %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% load static %}
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'Home/header.html' %}
+  <body>
+  {% include 'Home/navbar.html' %}
+
+  <div class="products" id="products">
+    <div class="container">
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <input type="search" class="form-control" id="" placeholder="Search product">
+        </div>
+      </form>
+      </div>
+    </div>
+
+
+    {% for p in myproducts %}
+      <div class="product-item" id="product-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <img src ="{{ p.product_img.url }}" height="140px" width="120px">
+              </div>
+
+              <div class="col-lg-4 col-md-4">
+            <a href="{% url 'Collections:product-detail' pk=p.product_id %}">  <h4>{{p.title}}</h4></a>
+            <h5> {{p.description}} </h5>
+            <p> N{{p.price}}</p>
+              </div>
+
+                <div class="col-lg-4 col-md-4">
+                <a href="#" id ="cart-img">{% fontawesome_icon 'shopping-cart' large=True color='black' %}</a>
+                </div>
+
+
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+
+  </body>
+</html>
